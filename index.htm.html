@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hema | ECE Portfolio</title>
+<style>
+:root{--bg:#f2f6ef;--ink:#16261c;--mute:#51655a;--card:#ffffff;--line:#cfdcc9;--accent:#1f6f4a;--accent2:#e3b23c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a14;--ink:#e6efe3;--mute:#9bb0a2;--card:#16251c;--line:#27402f;--accent:#5fcf95;--accent2:#e3b23c}}
+:root[data-theme="dark"]{--bg:#0f1a14;--ink:#e6efe3;--mute:#9bb0a2;--card:#16251c;--line:#27402f;--accent:#5fcf95;--accent2:#e3b23c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:20px 0;font-size:.95rem}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hero{padding:56px 0 40px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;margin:0 0 16px;max-width:16ch}
+.hero p{max-width:58ch;color:var(--mute);font-size:1.1rem;margin:0 0 24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;margin-right:10px}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.6rem;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card p{margin:0 0 12px;color:var(--mute);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.8rem;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.card a{color:var(--accent);font-weight:600;text-decoration:none;font-size:.95rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:8px 14px;border-radius:8px;background:var(--card);border:1px solid var(--line)}
+.skills span.hl{border-color:var(--accent2)}
+ul.plain{margin:0;padding-left:20px;color:var(--mute)}
+footer{padding:32px 0 48px;color:var(--mute)}
+footer a{color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero" id="top">
+<h1>Hema | ECE Portfolio</h1>
+<p>Electronics and Communication Engineering student (2027 batch). I combine RF signals, AI, microcontrollers and Python to solve real problems in wireless security and farming.</p>
+<a class="btn" href="#projects">View my projects</a><a class="btn alt" href="https://github.com/Hema-ui-tech" target="_blank" rel="noopener">GitHub</a>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p style="max-width:65ch;color:var(--mute)">I study Electronics and Communication Engineering, where signals, hardware and software meet. I enjoy turning an idea into a working prototype, from identifying a transmitter by its RF signal to reading a soil sensor and showing the result on a dashboard. I am preparing for software testing and Python roles.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>AI-Based RF Fingerprinting</h3>
+<p>Uses machine learning to identify wireless devices from the tiny, unique imperfections in their radio signals.</p>
+<div class="tags"><span>RF signals</span><span>AI / ML</span><span>Python</span></div><br>
+<a href="https://github.com/Hema-ui-tech" target="_blank" rel="noopener">View on GitHub</a>
+</div>
+<div class="card">
+<h3>Fertilizer Recommendation System</h3>
+<p>Machine learning model that suggests the right fertilizer from soil and crop conditions.</p>
+<div class="tags"><span>Python</span><span>Machine Learning</span></div><br>
+<a href="https://github.com/Hema-ui-tech/fertilizer-recommendation-system" target="_blank" rel="noopener">View on GitHub</a>
+</div>
+<div class="card">
+<h3>Smart Irrigation System</h3>
+<p>ESP32 with a soil moisture sensor and a dashboard showing moisture, water level and target moisture.</p>
+<div class="tags"><span>ESP32</span><span>IoT</span><span>Sensors</span></div><br>
+<a href="https://github.com/Hema-ui-tech" target="_blank" rel="noopener">View on GitHub</a>
+</div>
+<div class="card">
+<h3>Smart Internship Application Tracker</h3>
+<p>Built overnight with Power Platform to track internship applications and their status in one place.</p>
+<div class="tags"><span>Power Platform</span><span>Automation</span></div><br>
+<a href="https://github.com/Hema-ui-tech" target="_blank" rel="noopener">View details</a>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span class="hl">Python</span><span class="hl">Software testing</span><span class="hl">RF and signal processing</span><span>ESP32 / Arduino</span><span>IoT and sensors</span><span>Machine learning basics</span><span>Power Platform</span><span>Git and GitHub</span><span>Problem solving</span>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<ul class="plain">
+<li>GitHub: <a href="https://github.com/Hema-ui-tech" target="_blank" rel="noopener" style="color:var(--accent)">github.com/Hema-ui-tech</a></li>
+<li>Email: <a href="mailto:shemapriya111@gmail.com" style="color:var(--accent)">shemapriya111@gmail.com</a></li>
+<li>Phone: <a href="tel:+918946080436" style="color:var(--accent)">8946080436</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/s-hema-priya-b94234311" target="_blank" rel="noopener" style="color:var(--accent)">linkedin.com/in/s-hema-priya-b94234311</a></li>
+</ul>
+</section>
+
+<footer>&copy; 2026 Hema. Built with care.</footer>
+</div>
+</body>
+</html>
